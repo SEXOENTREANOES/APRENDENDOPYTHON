@@ -1,0 +1,14 @@
+pip install termcolor
+
+from termcolor import colored
+
+nome = "Henrique Antunes Ibiapino"
+altura = 1.80
+odeia_colica = True
+escuta_taylor_swift = True
+estado_civil = "solteiro"
+
+mensagem = f"{nome.upper()} tem {altura}m, {'odeia' if odeia_colica else 'não odeia'} cólica, " \
+           f"escuta {'Taylor Swift' if escuta_taylor_swift else 'outros artistas'} e está {estado_civil}."
+
+print(colored(mensagem, 'cyan', attrs=['bold']))
